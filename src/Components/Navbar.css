@@ -1,0 +1,24 @@
+.navbar > nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.navbar > nav a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+.navbar > nav a:active {
+  transform: translateY(1px);
+  /* transition: ease 0.3s; */
+}
+.navbar > nav a.active {
+  color: var(--cls--prime);
+  font-weight: 600;
+  transition: ease-in 0.4s;
+  transform: scale(1.2);
+}
+.navbar > nav a:not(active) {
+  color: grey;
+}

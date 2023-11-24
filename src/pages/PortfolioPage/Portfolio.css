@@ -1,0 +1,24 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+nav a {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+nav a:active {
+  transform: translateY(1px);
+  /* transition: ease 0.3s; */
+}
+nav a.active {
+  color: white;
+  /* font-weight: 600; */
+  transition: ease-in 0.4s;
+  /* transform: scale(1.2); */
+}
+nav a:not(active) {
+  color: grey;
+}
